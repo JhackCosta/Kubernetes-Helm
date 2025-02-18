@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: pagamentos
   labels:
+    {{- include "alura-affods-app.labels" .| nindent 4}}
     app: pagamentos
 spec:
   replicas: {{.Values.pagamentos.replicaCount}}

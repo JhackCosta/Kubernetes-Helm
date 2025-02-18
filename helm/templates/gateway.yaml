@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: gateway
   labels:
+    {{- include "alura-affods-app.labels" .| nindent 4}}
     app: gateway
 spec:
   replicas: {{.Values.gateway.replicaCount}}
