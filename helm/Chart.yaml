@@ -4,3 +4,8 @@ description: Um Helm chart para deploy de uma aplicação de delivery de comida 
 type: application
 version: 1.0.0
 appVersion: 0.0.1
+
+dependencies:
+  - name: mysql
+    version: "12.3.0"
+    repository: https://charts.bitnami.com/bitnami
