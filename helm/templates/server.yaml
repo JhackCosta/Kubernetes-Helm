@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: server]
+  name: server
   labels:
-    {{- include "alura-affods-app.labels" .| nindent 4}} 
+    {{- include "alura-foods-app.labels" .| nindent 4}} 
     app: server
 spec:
   selector:
